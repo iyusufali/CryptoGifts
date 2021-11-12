@@ -33,7 +33,7 @@ pub struct Create<'info> {
 #[derive(Accounts)]
 pub struct Increment<'info> {
     #[account(mut)]
-    pub base_account: Account<'info, BaseAccount>,
+    pub base_account: Account<' info, BaseAccount>,
 }
 
 // An account that goes inside a transaction instruction
